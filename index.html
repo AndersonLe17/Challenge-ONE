@@ -5,8 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Texto Alura</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
 <body>
-    
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-encrypt">
+                    <div class="logo">
+                        <img src="./assets/img/Vector.svg" alt="logo">
+                    </div>
+                    <section class="encrypt">
+                        <div class="txt-input">
+                            <textarea name="textoPlano" id="textoPlano" placeholder="Ingrese el texto aqui"></textarea>
+                        </div>
+                        <div class="footer-encrypt">
+                            <p><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>
+                            <div class="buttons-encrypt">
+                                <button class="btn-fill">Encriptar</button>
+                                <button class="btn-out">Desencriptar</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-result">
+                    <div class="result">
+                        <div class="img-no-result">
+                            <img src="./assets/img/Muñeco.svg" alt="Muñeco">
+                            <strong>Ningún mensaje fue encontrado</strong>
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                        <div class="on-result">
+                            <div class="txt-result">
+                                <p id="lblResultado">fdssddfs</p>
+                            </div>
+                            <div class="button-copy">
+                                <button>Copiar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
