@@ -7,6 +7,12 @@
     <title>Encriptador de Texto Alura</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- JavaScript -->
+    <script src="./assets/js/alertify.min.js"></script>
+    <!-- include the style -->
+    <link rel="stylesheet" href="./assets/css/alertify.min.css" />
+    <!-- include a theme -->
+    <link rel="stylesheet" href="./assets/css/default.min.css" />
 </head>
 <body>
     <main>
@@ -23,8 +29,8 @@
                         <div class="footer-encrypt">
                             <p><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>
                             <div class="buttons-encrypt">
-                                <button class="btn-fill">Encriptar</button>
-                                <button class="btn-out">Desencriptar</button>
+                                <button id="btn-encrypt" class="btn-fill">Encriptar</button>
+                                <button id="btn-decrypt" class="btn-out">Desencriptar</button>
                             </div>
                         </div>
                     </section>
@@ -38,14 +44,10 @@
                         </div>
                         <div class="on-result">
                             <div class="txt-result">
-                                <p id="lblResultado">Lorem ipsum dolor sit amet, consectetur 
-                                    adipiscing elit. Orci montes, sit et diam risus scelerisque 
-                                    vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris 
-                                    quam quisque ut eget fringilla sit elit. Libero, sodales duis 
-                                    fames id diam feugiat aliquet non egestas.</p>
+                                <p id="lblResultado"></p>
                             </div>
                             <div class="button-copy">
-                                <button>Copiar</button>
+                                <button id="btn-copy">Copiar</button>
                             </div>
                         </div>
                     </div>

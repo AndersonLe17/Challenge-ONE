@@ -131,7 +131,6 @@ main {
 }
 
 .result .img-no-result {
-   /* display: none; */
    margin: 32px;
    align-self: center;
    text-align: center;
@@ -153,7 +152,6 @@ main {
 }
 
 .result .on-result {
-   display: flex;
    display: none;
    flex-direction: column;
    justify-content: space-between;
